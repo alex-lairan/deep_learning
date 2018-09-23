@@ -1,0 +1,13 @@
+name: deep_learning
+version: 0.1.0
+
+authors:
+  - Alexandre Lairan <lairana@free.fr>
+
+targets:
+  deep_learning:
+    main: src/deep_learning.cr
+
+crystal: 0.26.1
+
+license: MIT
