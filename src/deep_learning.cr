@@ -21,3 +21,7 @@ pp network.call(image)
 
 calculator = Neural::CostCalculator.new(network)
 pp calculator.call(image, data.first.label)
+
+network_father = Neural::Builder.new([2, 2]).call(Neural::Builder::MIN_VALUE)
+network_mother = Neural::Builder.new([2, 2]).call(Neural::Builder::MAX_VALUE)
+pp Neural::Nurcery.new.call(network_father, network_mother)
