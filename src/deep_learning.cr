@@ -3,12 +3,6 @@ require "linalg"
 require "./mnist/**"
 require "./neural/**"
 
-module DeepLearning
-  VERSION = "0.1.0"
-
-  # TODO: Put your code here
-end
-
 images = File.open("./data/train-images.idx3-ubyte")
 labels = File.open("./data/train-labels.idx1-ubyte")
 
@@ -25,3 +19,4 @@ pp calculator.call(image, data.first.label)
 network_father = Neural::Builder.new([2, 2]).call(Neural::Builder::MIN_VALUE)
 network_mother = Neural::Builder.new([2, 2]).call(Neural::Builder::MAX_VALUE)
 pp Neural::Nurcery.new.call(network_father, network_mother)
+pp Neural::Mutator.new.call(network_father)
