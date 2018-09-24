@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  linalg:
+    github: konovod/linalg
+    commit: 3467699ad720d5f4c2e55cbfe925bec5addce227
+

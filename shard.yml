@@ -11,3 +11,7 @@ targets:
 crystal: 0.26.1
 
 license: MIT
+
+dependencies:
+  linalg:
+    github: konovod/linalg
