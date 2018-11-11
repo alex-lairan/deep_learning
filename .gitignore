@@ -1,5 +1,7 @@
 /docs/
 /lib/
+!/bin/.keep
 /bin/
 /.shards/
 *.dwarf
+.deep_learning

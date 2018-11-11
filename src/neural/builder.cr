@@ -7,6 +7,8 @@ module Neural
     MIN_VALUE = Proc(Float64).new { -1.0 }
     RANDOM_VALUE = Proc(Float64).new { rand(-1.0..1.0) }
 
+    getter levels
+
     def initialize(@levels : Array(Int32))
     end
 

@@ -29,10 +29,5 @@ module Neural
     private def matrix_sigmoid(matrix)
       matrix.map { |val| sigmoid(val) }
     end
-
-    private def matrix_sigmoid_derivative(matrix)
-      ones = Matrix.build(matrix.column_size, matrix.row_size) { 1 }
-      matrix_sigmoid(matrix) * (ones - matrix_sigmoid(matrix))
-    end
   end
 end
